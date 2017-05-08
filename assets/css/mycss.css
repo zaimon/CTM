@@ -1,0 +1,10 @@
+/* .body{ box-shadow: 0px 0px 5px rgba(200,200,200,0.9);margin: 15px auto} */
+
+footer { height: auto;background: black; color: lightgray; position: fixed;bottom: 0;width: 100%}
+.footer{ margin: 15px 0; }
+
+.ass_box{ text-align: center ;box-shadow: 0 0 5px rgba(200,200,200,1);margin-bottom: 15px; padding: 15px}
+.ass_box:hover{ background: rgba(240,240,240,1);cursor: pointer; }
+.ass_icon{font-size: 500%}
+.ass_cre { width: 50% ;  }
+.ass_etm{ width: 50% ; float: right }
