@@ -23,8 +23,14 @@
         <li><a href="#">Page 3</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        {{-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> --}}
+        
+        <li class="dropdown">
+        <img class="profile_img" src="{{ asset('assets/img/brand.png') }}" alt="">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"><a href="{{ url("logout") }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>

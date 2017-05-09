@@ -11,10 +11,27 @@
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+    
+		//Route::get('login', "LoginController@login");
 
+    
+    	Route::get('/', "LoginController@index");
+    	Route::get('login', "LoginController@index");
+    	Route::get('logout', "LoginController@logout");
+		Route::post('loginProcess', "LoginController@loginProcess");
+
+		Route::get('index',function(){
+			return view("index");
+		})->middleware(['auth']);
+
+
+	/*Route::group(['middleware'=>'auth'],function(){
+		// Route::get('/', "LoginController@index");
+		// Route::get('index','LoginController@index');
+
+		Route::post('loginProcess', "LoginController@loginProcess");
+	});*/
+/*
 Route::get('index', function () {
     return view('index');
-});
+});*/

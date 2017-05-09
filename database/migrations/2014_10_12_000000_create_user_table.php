@@ -21,7 +21,7 @@ class CreateUserTable extends Migration
             $table->char('gender',1);
             $table->char('rank',1);
             $table->string('email')->unique();
-            //$table->rememberToken();
+            $table->rememberToken();
             $table->timestamps();
         });
     }
